@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "ukr");
+	double a, t, p, y;
+	const double x = 4;
+	cout << "Введіть значення a: "; cin >> a;
+	t = pow((x + pow(a, 2)), 1/3);
+	p = pow(x, 2) - sqrt(abs(x));
+	y = pow(p, 2) + pow(t, 4);
+	cout << " t = " << t;
+    cout << " p = " << p;
+    cout << " y = " << y;
+	return 0;
+}
